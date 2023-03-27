@@ -1,0 +1,31 @@
+{
+  "name": "anime-watcher",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Germano Gomes",
+  "description": "A simple anime watcher list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.ts"
+  },
+  "keywords": [
+    "Node",
+    "DDD",
+    "TypeScript",
+    "Hexagonal architecture"
+  ],
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "reflect-metadata": "^0.1.13",
+    "tsyringe": "^4.7.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.15.10",
+    "@types/uuid": "^9.0.1"
+  }
+}
