@@ -5,13 +5,11 @@ import { GetAllAnimeUseCase } from '../../../application/usecases/anime/get-all/
 export class GetAllAnimeController {
   async handle(request: Request, response: Response): Promise<any> {
     const getallAnimeUseCase = container.resolve(GetAllAnimeUseCase);
-    console.log('wuz here');
-    
     try {
-        const animes = await getallAnimeUseCase.execute();
-        return response.status(201).json(animes);
+      const animes = await getallAnimeUseCase.execute();
+      return response.status(201).json(animes);
     } catch (error) {
-        return response.status(400).json({ error });
+      return response.status(400).json({ error });
     }
   }
 }
